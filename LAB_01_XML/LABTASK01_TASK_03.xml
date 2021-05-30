@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentTask>
+ <Task3>
+    <ID>1</ID>
+    <NAME>John doe</NAME>
+    <ADDRESS>H# 38,R#3,Banani,Dhaka</ADDRESS>
+    <DEPARTMENT>Sales</DEPARTMENT>
+    <SALARY>$20000</SALARY>
+    <ID>2</ID>
+    <NAME>Mark Zuckerberg</NAME>
+    <ADDRESS>Flat A/1, H# 20, R#18,Mirpur,Dhaka</ADDRESS>
+    <DEPARTMENT>Accounts</DEPARTMENT>
+    <SALARY>$12000</SALARY>
+    <ID>3</ID>
+    <NAME>Ala Voski</NAME>
+    <ADDRESS>H# 38, R#3,Motijheel</ADDRESS>
+    <DEPARTMENT>Human Resourcce</DEPARTMENT>
+    <SALARY>$30000</SALARY>
+ </Task3>
+
+</AssessmentTask>
