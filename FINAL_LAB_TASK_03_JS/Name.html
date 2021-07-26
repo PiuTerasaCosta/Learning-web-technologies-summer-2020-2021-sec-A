@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name</title>
+</head>
+
+<body>
+    <form action="" name="form" onsubmit="return fun()">
+        Name<br>
+        <input type="text" name="name" id="name"> <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
+<script>
+    function fun() {
+        let n = document.forms["form"]["name"].value;
+        if (n == "") {
+            alert("Cannot be empty");
+            return false;
+        } else if (n.length < 2) {
+            alert("Name at least two words");
+            return false;
+        } else {
+            if (n.match(/^[A-Za-z"."-]+$/)) {
+                if (n[0].match(/^[A-Za-z]+$/)) {
+                    alert("ok");
+                    return true;
+                } else {
+                    alert("Name Must start with a letter");
+                    return false;
+                }
+            } else {
+                alert("a-z or A-Z or dot(.) or dash(-) is not valid!");
+                return false;
+            }
+        }
+    }
+</script>

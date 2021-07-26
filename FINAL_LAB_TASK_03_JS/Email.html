@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+</head>
+
+<body>
+    <form action="" name="form" onsubmit="return fun()">
+        Email<br>
+        <input type="text" name="email" id="email"> <input type="button" value="i" onclick="hint()">
+        <p id="i"></p>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
+<script>
+    function hint() {
+        document.getElementById("i").innerHTML = "hint: sample@example.com";
+    }
+
+    function fun() {
+
+        let n = document.forms["form"]["email"].value;
+        if (n == "") {
+            alert("Cannot be empty");
+            return false;
+        } else {
+            if (n.match(/^([w-.]+@([w-]+.)+[w-]{2,4})?$/)) {
+                alert("ok");
+            } else {
+                alert("Must be a valid email address");
+                return false;
+            }
+        }
+    }
+</script>
